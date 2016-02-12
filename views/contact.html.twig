@@ -1,44 +1,46 @@
+<!DOCTYPE html>
 
 <html>
 <head>
+
     <title>Contacts</title>
 </head>
 <body>
     <h1>My Contacts</h1>
 
     {% if contacts is not empty %}
-        <p>My Contact:</p>
+        <p></p>
         <ul>
             {% for contact in contacts %}
                 <h2> {{ contact.getName }} </h2>
-                <li>Name: {{ contact.getName }}</li>
-                <li>Phone: {{ contact.getPhone }}</li>
-                <li>Street: {{ contact.getStreet }}</li>
-                <li>City: {{ contact.getCity }}</li>
-                <li>State: {{ contact.getState }}</li>
-                <li>Zip: {{ contact.getZip }}</li>
+                <li><strong>Name:</strong> {{ contact.getName }}</li>
+                <li><strong>Phone:</strong> {{ contact.getPhone }}</li>
+                <li><strong>Street:</strong> {{ contact.getStreet }}</li>
+                <li><strong>City:</strong> {{ contact.getCity }}</li>
+                <li><strong>State:</strong> {{ contact.getState }}</li>
+                <li><strong>Zip:</strong> {{ contact.getZip }}</li>
             {% endfor %}
         </ul>
     {% endif %}
-
+    <h2>Add a Contact!</h2>
     <form action='/contacts' method='post'>
-        <label for='name'>Name:</label>
-        <input id='name' name='name' type='text'></br>
-        <label for='phone'>Phone:</label>
-        <input id='phone' name='phone' type='text'></br>
-        <label for='street'>Street:</label>
-        <input id='street' name='street' type='text'></br>
-        <label for='city'>City:</label>
-        <input id='city' name='city' type='text'></br>
-        <label for='state'>State:</label>
-        <input id='state' name='state' type='text'></br>
-        <label for='zip'>Zip:</label>
-        <input id='zip' name='zip' type='text'></br>
+        <p><label for='name'><strong>Name:</strong></label>
+        <input id='name' name='name' type='text'></br></p>
+        <p><label for='phone'><strong>Phone:</strong></label>
+        <input id='phone' name='phone' type='text'></br></p>
+        <p><label for='street'><strong>Street:</strong></label>
+        <input id='street' name='street' type='text'></br></p>
+        <p><label for='city'><strong>City:</strong></label>
+        <input id='city' name='city' type='text'></br></p>
+        <p><label for='state'><strong>State:</strong></label>
+        <input id='state' name='state' type='text'></br></p>
+        <p><label for='zip'><strong>Zip:</strong></label>
+        <input id='zip' name='zip' type='text'></br></p>
 
-        <button type='submit'>Add Contact</button>
+        <p><button type='submit'><strong>Add Contact</strong></button></p>
     </form>
     <form action='/delete_contacts' method='post'>
-        <button type='submit'>Clear Contacts</button>
+        <p><button type='submit'><strong>Clear Contacts</strong></button></p>
     </form>
 </body>
 </html>

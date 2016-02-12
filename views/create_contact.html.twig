@@ -1,16 +1,19 @@
+<!DOCTYPE html>
+
 <html>
-<head>
-    <title>New Contact</title>
-</head>
-<body>
-    <h1>You Added a New Contact!</h1>
-    <h2> {{ contact.getName }} </h2>
-    <li>Name: {{ newcontact.getName }}</li>
-    <li>Phone: {{ newcontact.getPhone }}</li>
-    <li>Street: {{ newcontact.getStreet }}</li>
-    <li>City: {{ newcontact.getCity }}</li>
-    <li>State: {{ newcontact.getState }}</li>
-    <li>Zip: {{ newcontact.getZip }}</li>
-    <p><a href='/'>View List of Contacts.</a></p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>New Contact</title>
+    </head>
+    <body>
+        <h1>You Added a New Contact!</h1>
+        <h2> {{ contact.getName }} </h2>
+        <li><strong>Name:</strong> {{ newcontact.getName }}</li>
+        <li><strong>Phone:</strong> {{ newcontact.getPhone }}</li>
+        <li><strong>Street:</strong> {{ newcontact.getStreet }}</li>
+        <li><strong>City:</strong> {{ newcontact.getCity }}</li>
+        <li><strong>State:</strong> {{ newcontact.getState }}</li>
+        <li><strong>Zip:</strong> {{ newcontact.getZip }}</li>
+        <h2><a href='/'>View List of Contacts.</a></h2>
+    </body>
 </html>
