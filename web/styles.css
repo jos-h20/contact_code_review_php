@@ -1,0 +1,43 @@
+body {
+    background-image: url("img/background.jpg");
+}
+
+#header {
+    margin-bottom: 50px;
+    background-color: #D3D3D3;
+    height: 150px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    /*background-image: url("img/contacts.jpg");*/
+}
+.list {
+    width: 200px;
+    float: left;
+    padding: 10px;
+    font-size: 20px;
+}
+.form {
+    width: 400px;
+    float: right;
+    padding: 10px;
+    border: 2px solid black;
+    margin-right: 100px;
+}
+.display {
+    width: 500px;
+    padding: 10px;
+    /*border: 2px solid black;*/
+    margin-left: 500px;
+    margin-top: 300px;
+}
+.newcontact {
+    width: 400px;
+    height; 300px;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 20px;
+}
+.input {
+    font-size: 25px;
+}
