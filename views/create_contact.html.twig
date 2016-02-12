@@ -8,18 +8,45 @@
         <title>New Contact</title>
     </head>
     <body>
-        <div class="display">
-            <h1>You Added a New Contact!</h1>
-            <div class="newcontact"
-            <h2> {{ contact.getName }} </h2>
-            <li><strong>Name:</strong> {{ newcontact.getName }}</li>
-            <li><strong>Phone:</strong> {{ newcontact.getPhone }}</li>
-            <li><strong>Street:</strong> {{ newcontact.getStreet }}</li>
-            <li><strong>City:</strong> {{ newcontact.getCity }}</li>
-            <li><strong>State:</strong> {{ newcontact.getState }}</li>
-            <li><strong>Zip:</strong> {{ newcontact.getZip }}</li>
+        <div class="navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" style="color: #F6F6F6;" href="/">Josh Overly</a>
+            </div>
+            <div class="navbar-collapse collapse" >
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a class="page-scroll" href="/" style="color: #F6F6F6;">Home</a>
+                 </li>
+              </ul>
+            </div>
+          </div>
         </div>
-            <h2><a href='/'>View List of Contacts.</a></h2>
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4 display">
+                <h1>You Added a New Contact!</h1>
+                <div class="newcontact"
+                    <h2> {{ contact.getName }} </h2>
+                    <li><strong>Name:</strong> {{ newcontact.getName }}</li>
+                    <li><strong>Phone:</strong> {{ newcontact.getPhone }}</li>
+                    <li><strong>Street:</strong> {{ newcontact.getStreet }}</li>
+                    <li><strong>City:</strong> {{ newcontact.getCity }}</li>
+                    <li><strong>State:</strong> {{ newcontact.getState }}</li>
+                    <li><strong>Zip:</strong> {{ newcontact.getZip }}</li>
+                </div>
+                <h2><a href='/'>View List of Contacts.</a></h2>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+        <div class="navbar navbar-fixed-bottom" role="navigation">
+            <div class="container">
+                <div class="navbar-text pull-left">
+                    <p>© 2016 Josh Overly.</p>
+                </div>
+            </div>
         </div>
     </body>
 </html>

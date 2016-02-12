@@ -1,43 +1,59 @@
 body {
     background-image: url("img/background.jpg");
 }
-
-#header {
+.navbar-header {
+    color: white;
+}
+.jumbotron {
+    margin-top: 50px;
     margin-bottom: 50px;
-    background-color: #D3D3D3;
-    height: 150px;
     padding-top: 10px;
     text-align: center;
     font-size: 30px;
-    /*background-image: url("img/contacts.jpg");*/
 }
 .list {
-    width: 200px;
     float: left;
     padding: 10px;
     font-size: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    max-width: 300px;
+    background-color: #F6F6F6;
+    min-height: 300px;
 }
 .form {
-    width: 400px;
     float: right;
     padding: 10px;
-    border: 2px solid black;
-    margin-right: 100px;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-bottom: 60px;
 }
+
 .display {
-    width: 500px;
+    max-width: 500px;
     padding: 10px;
-    /*border: 2px solid black;*/
-    margin-left: 500px;
     margin-top: 300px;
+
+}
+.delete {
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 300px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: #F6F6F6;
 }
 .newcontact {
-    width: 400px;
-    height; 300px;
-    border: 2px solid black;
+    border: 2px solid;
+    border-radius: 10px;
     padding: 20px;
     font-size: 20px;
+    background-color: #F6F6F6;
 }
 .input {
     font-size: 25px;
+}
+.navbar {
+    background-color:  #6699cc;
+    color: #F6F6F6;
 }
