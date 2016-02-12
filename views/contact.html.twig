@@ -1,0 +1,44 @@
+
+<html>
+<head>
+    <title>Contacts</title>
+</head>
+<body>
+    <h1>My Contacts</h1>
+
+    {% if contacts is not empty %}
+        <p>My Contact:</p>
+        <ul>
+            {% for contact in contacts %}
+                <h2> {{ contact.getName }} </h2>
+                <li>Name: {{ contact.getName }}</li>
+                <li>Phone: {{ contact.getPhone }}</li>
+                <li>Street: {{ contact.getStreet }}</li>
+                <li>City: {{ contact.getCity }}</li>
+                <li>State: {{ contact.getState }}</li>
+                <li>Zip: {{ contact.getZip }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <form action='/contacts' method='post'>
+        <label for='name'>Name:</label>
+        <input id='name' name='name' type='text'></br>
+        <label for='phone'>Phone:</label>
+        <input id='phone' name='phone' type='text'></br>
+        <label for='street'>Street:</label>
+        <input id='street' name='street' type='text'></br>
+        <label for='city'>City:</label>
+        <input id='city' name='city' type='text'></br>
+        <label for='state'>State:</label>
+        <input id='state' name='state' type='text'></br>
+        <label for='zip'>Zip:</label>
+        <input id='zip' name='zip' type='text'></br>
+
+        <button type='submit'>Add Contact</button>
+    </form>
+    <form action='/delete_jobs' method='post'>
+        <button type='submit'>Clear Contacts</button>
+    </form>
+</body>
+</html>
