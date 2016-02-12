@@ -22,23 +22,23 @@ class Contact
     {
         $this->name = $new_name;
     }
-    function setName($new_phone)
+    function setPhone($new_phone)
     {
         $this->phone = $new_phone;
     }
-    function setName($new_street)
+    function setStreet($new_street)
     {
         $this->street = $new_street;
     }
-    function setName($new_city)
+    function setCity($new_city)
     {
         $this->city = $new_city;
     }
-    function setName($new_state)
+    function setState($new_state)
     {
         $this->state = $new_state;
     }
-    function setName($new_zip)
+    function setZip($new_zip)
     {
         $this->zip = $new_zip;
     }
@@ -80,8 +80,6 @@ class Contact
     {
         $_SESSION['list_of_contacts'] = array();
     }
-
-
 
 }
 
