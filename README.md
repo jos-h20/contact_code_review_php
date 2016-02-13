@@ -10,7 +10,7 @@ Address Book allows customer to input addresses and phone numbers of their conta
 
 ## Setup/Installation Requirements
 
-* _Clone folder from GitHub. Install Composer. Open web folder in your terminal. Start your PHP server. Go to localhost page._
+* _Clone contact_code_review_php from GitHub. https://github.com/jos-h20/contact_code_review_php Install Composer in that folder. Open web folder inside contact_code_review_php in your terminal. Start your PHP server. Go to localhost page in your web browser._
 
 
 ## Known Bugs
